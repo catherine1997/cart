@@ -1,23 +1,32 @@
-import logo from './logo.svg';
+
 import './App.css';
+import React from 'react';
+import Home from './pages/Home';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import Cart from './components/Cart';
+import { CartProvider } from 'react-use-cart';
+import Navbar from './components/Navbar';
+import Slider from './components/Slider';
+import Footer from './components/Footer';
+import { BrowserRouter, Route, Link, Routes } from "react-router-dom";
+// import Form from './components/Form';
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <CartProvider>
+        <Navbar />
+       <Slider />
+      <Home />
+      <Cart />
+      <Footer />
+     
+      </CartProvider>
+
+     
+    
     </div>
   );
 }
