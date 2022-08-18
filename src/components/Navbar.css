@@ -33,8 +33,8 @@ header{
     }  
     .nav-links{
         width: 100%;
-        height: 100vh;
-        background: lightsalmon;
+        height: 10vh;
+       
         top: 80px;
         left: -100%;
         text-align: center;
@@ -75,6 +75,7 @@ header{
 
 .nav-links{
     transition: all 0.2s ease 0s;
+    
 }
 
 .nav-links li{
@@ -87,7 +88,7 @@ header{
 .nav-links li a:hover{
     color: rgb(151, 70, 70);
 }
-button{
+.button{
     padding: 9px 30px;
     background-color: white;
     border: none;
@@ -96,7 +97,7 @@ button{
     transition: all 0.2s ease 0s;
     color: orangered;
 }
-button:hover{
+.button:hover{
     background-color: orange;
 }
 
@@ -120,21 +121,33 @@ button:hover{
     }
     
 }
-/* 
-@media screen and (max-width: 1080px){
 
-    .menu{
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: #2f3640;
-        top: 80px;
-        left: 0;
-        text-align: center;
+@media (max-width: 800px) {
 
-    }
-    .nav-links li{
+    .nav-bar{
         display: block;
-        margin: 50px 0;
+        position: absolute;
+        top: 48px;
+        height: 500px;
+        width: 100%;
+        z-index: 3;
+        margin: 0;
+        left: -100%;
+    
     }
-} */
+    .active{
+        left: 0;
+        /* transform: translate(-50%, 50%); */
+        display: block;
+        position: absolute;
+        top: 48px;
+        height: 500px;
+        width: 70%;
+        z-index: 3;
+        margin: 0;
+        left: 00%;
+        opacity: 0.8;
+        background-color: orangered
+    }
+}
+ 

@@ -13,32 +13,32 @@ const data = {
         {
             id: 1,
             img: imgFour,
-            title: 'product one',
-            desc: 'product for you',
+            title: 'French Rice',
+            desc: '',
             price: 80,
         },
    
         {
             id: 2,
             img: imgAma,
-            title: 'product one',
-            desc: 'product for you',
+            title: 'Amala and Ewedu',
+            desc: '',
             price: 70,
         },
 
         {
             id: 3,
             img: imgThree,
-            title: 'product one',
-            desc: 'product for you',
+            title: 'Beans and plantain',
+            desc: '',
             price: 20,
         },
 
         {
             id: 4,
             img: imgFour,
-            title: 'product one',
-            desc: 'product for you',
+            title: 'French Rice',
+            desc: '',
             price: 100,
         },
 

@@ -9,7 +9,7 @@ import Navbar from './components/Navbar';
 import Slider from './components/Slider';
 import Footer from './components/Footer';
 import { BrowserRouter, Route, Link, Routes } from "react-router-dom";
-// import Form from './components/Form';
+
 
 
 
